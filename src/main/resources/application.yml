@@ -1,0 +1,8 @@
+server:
+  port: 8070
+  servlet:
+    context-path: /SpringBoot-CheckPort
+logging:
+  charset:
+    console: utf-8
+  config: "classpath:logback.xml"
