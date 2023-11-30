@@ -6,3 +6,11 @@ logging:
   charset:
     console: utf-8
   config: "classpath:logback.xml"
+
+dept:
+  is:
+    enable: 0
+
+user:
+  enable: 1
+  open: 2
