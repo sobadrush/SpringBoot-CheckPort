@@ -2,10 +2,7 @@ server:
   port: 8070
   servlet:
     context-path: /SpringBoot-CheckPort
-logging:
-  charset:
-    console: utf-8
-  config: "classpath:logback.xml"
+
 
 dept:
   is:
@@ -14,3 +11,9 @@ dept:
 user:
   enable: 1
   open: 2
+
+logging:
+  config: classpath:log4j2-Roger.xml
+  charset:
+    file: utf-8
+    console: UTF-8
