@@ -28,7 +28,7 @@ public class HelloController {
     @Scheduled(fixedDelay = 3000)
     public String sayHello() {
         logger.info("=== Say Hello ===");
-        IntStream.rangeClosed(1, 10000).forEach(i -> {
+        IntStream.rangeClosed(1, 30000).forEach(i -> {
             logger.info(">>> @Scheduled 觸發: {} - @@@測試@@@", i);
         });
         return "Hello world!";
