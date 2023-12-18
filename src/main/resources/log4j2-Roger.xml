@@ -4,7 +4,7 @@
         <Property name="app_name">SpringBoot-CheckPort</Property>
         <!-- <Property name="baseDir">D:/logs</Property> -->
         <!-- <Property name="baseDir">/Users/nsl_admin/Desktop/logs</Property> -->
-        <Property name="baseDir">${env:LOG_PATH}</Property> <!-- 使用環境變數 -->
+        <Property name="baseDir">${env:LOG_PATH:-/Users/nsl_admin/Desktop/logss}</Property> <!-- 使用環境變數，並設定預設值 -->
         <Property name="logMsg_pattern">%d{yyyy-MM-dd HH:mm:ss} [%-5p] %c %L %M - %msg%xEx%n</Property>
     </Properties>
     <Appenders>
