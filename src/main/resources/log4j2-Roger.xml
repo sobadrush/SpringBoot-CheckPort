@@ -28,7 +28,7 @@
                 <Delete basePath="${baseDir}/$${date:yyyy-MM}/$${date:yyyy-MM-dd}" maxDepth="1">
                     <!-- 配置 AND 關係 -->
                     <!-- <IfFileName glob="*/app-*.log.gz"/> -->
-                    <IfFileName glob="${app_name}-*.log.gz"/>
+                    <IfFileName glob="*/${app_name}-*.log.gz"/>
                     <!-- <IfLastModified age="90d"/> &lt;!&ndash; 最後修改時間 > 90天 以上的檔案會被刪除 &ndash;&gt; -->
                     <IfLastModified age="10m"/> <!-- 最後修改時間 > 10分鐘以上 的檔案會被刪除 -->
                 </Delete>
