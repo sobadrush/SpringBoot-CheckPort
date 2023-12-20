@@ -17,8 +17,8 @@
                         filePattern="${baseDir}/$${date:yyyy-MM}/${app_name}-%d{yyyy-MM-dd HH-mm}-%i.log.gz">
             <PatternLayout pattern="${logMsg_pattern}"/>
             <Policies>
-                <!-- <TimeBasedTriggeringPolicy interval="1"/> &lt;!&ndash; 與 filePattern 最小時間單位匹配，ex: 若為 mm ，則為每1分鐘 &ndash;&gt; -->
-                <CronTriggeringPolicy schedule="0 * * * * ?"/> <!-- 每 1分鐘 觸發一次 -->
+                <TimeBasedTriggeringPolicy interval="1"/> <!-- 與 filePattern 最小時間單位匹配，ex: 若為 mm ，則為每1分鐘 -->
+                <!-- <CronTriggeringPolicy schedule="0 * * * * ?"/> &lt;!&ndash; 每 1分鐘 觸發一次 &ndash;&gt; -->
                 <SizeBasedTriggeringPolicy size="3MB"/> <!-- 正在寫入的 log 檔，容量到達 3MB 時，觸發滾動 -->
                 <!-- <OnStartupTriggeringPolicy /> -->
             </Policies>
